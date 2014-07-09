@@ -27,29 +27,18 @@ def draw():
 
 
     # Hier als Beispiel die Uhr zum Zeichnen einfügen
+
     pushMatrix()
     translate(width/2, height/2)
     jensClock.draw()
     popMatrix()
 
-<<<<<<< HEAD
-
-=======
->>>>>>> master
     pushMatrix()
     translate(width/5, height/2)
     HermannClock.draw()
     popMatrix()
 
-<<<<<<< HEAD
-
-=======
->>>>>>> master
     pushMatrix()
     translate(width/4, height/2)
     bensClock.draw()
     popMatrix()
-<<<<<<< HEAD
-
-=======
->>>>>>> master

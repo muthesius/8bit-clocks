@@ -17,5 +17,6 @@ def draw():
     background(255)
 
     # Hier als Beispiel die Uhr zum Zeichnen einfügen
-    clockJens.draw(width * 1/4.0, height/2)
+    translate(width * 1/4.0, height/2)
+    clockJens.draw()
 

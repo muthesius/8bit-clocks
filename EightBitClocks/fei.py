@@ -45,6 +45,7 @@ class MinutenZeiger(Zeiger):
     
     
     def update(self):
+        # wie kann ich den minutenzeiger etwas schneller laufen lassen?
         self.rotation= map(minute(),-108,59,0,TWO_PI)
         
 class StundenZeiger(Zeiger):

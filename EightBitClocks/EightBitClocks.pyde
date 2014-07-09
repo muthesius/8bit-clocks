@@ -6,8 +6,7 @@
 # Hier sollen alle Uhren eingefügt werden
 from JensClock import JensClock
 
-clockJens = JensClock()
-
+jensClock = JensClock()
 
 def setup():
     size(640,320)
@@ -17,5 +16,8 @@ def draw():
     background(255)
 
     # Hier als Beispiel die Uhr zum Zeichnen einfügen
-    clockJens.draw(width * 1/4.0, height/2)
+    pushMatrix()
+    translate(width/2, height/2)
+    jensClock.draw()
+    popMatrix()
 

@@ -16,13 +16,13 @@ clock=LingsClock()
 
 def setup():
     size(320,320)
-      
+
 def draw():
     smooth()
     background(255)
 
-    
-    translate(width/2, height/2)    
+
+    translate(width/2, height/2)
     clock.draw()
 
 
@@ -32,15 +32,24 @@ def draw():
     jensClock.draw()
     popMatrix()
 
-    
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
     pushMatrix()
     translate(width/5, height/2)
     HermannClock.draw()
     popMatrix()
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     pushMatrix()
     translate(width/4, height/2)
     bensClock.draw()
     popMatrix()
+<<<<<<< HEAD
 
+=======
+>>>>>>> master

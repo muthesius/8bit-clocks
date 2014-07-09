@@ -11,7 +11,7 @@ jensClock = JensClock()
 HermannClock = HermannClock()
 bensClock = BenClock()
 
-clock=LingsClock()
+lingsClock = LingsClock()
 
 
 def setup():
@@ -20,11 +20,6 @@ def setup():
 def draw():
     smooth()
     background(255)
-
-
-    translate(width/2, height/2)
-    clock.draw()
-
 
     # Hier als Beispiel die Uhr zum Zeichnen einfügen
 
@@ -42,3 +37,7 @@ def draw():
     translate(width/4, height/2)
     bensClock.draw()
     popMatrix()
+
+    translate(width/2, height/2)
+    lingsClock.draw()
+

@@ -5,8 +5,10 @@
 
 # Hier sollen alle Uhren eingefügt werden
 from JensClock import JensClock
+from HermannClock import HermannClock
 
 jensClock = JensClock()
+HermannClock = HermannClock()
 
 def setup():
     size(640,320)
@@ -19,5 +21,10 @@ def draw():
     pushMatrix()
     translate(width/2, height/2)
     jensClock.draw()
+    popMatrix()
+    
+    pushMatrix()
+    translate(width/5, height/2)
+    HermannClock.draw()
     popMatrix()
 

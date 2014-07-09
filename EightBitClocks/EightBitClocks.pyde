@@ -11,7 +11,7 @@ jensClock = JensClock()
 HermannClock = HermannClock()
 bensClock = BenClock()
 
-clock=LingClock()
+clock=LingsClock()
 
 
 def setup():

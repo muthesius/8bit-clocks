@@ -4,14 +4,16 @@
 from JensClock import JensClock
 from HermannClock import HermannClock
 from BenClock import BenClock
-from LingClock import *
+
+# @ling: hm... better filenameing...?
+from LingsClock import LingClock
 
 
 jensClock = JensClock()
 HermannClock = HermannClock()
 bensClock = BenClock()
 
-lingsClock = LingsClock()
+lingsClock = LingClock()
 
 
 def setup():

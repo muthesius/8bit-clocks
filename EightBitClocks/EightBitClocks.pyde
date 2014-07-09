@@ -3,10 +3,11 @@
   Muthesius Kunsthochschule Sommersemester 2014
 """
 
+# Hier sollen alle Uhren eingefügt werden
 from JensClock import JensClock
 
-clockBerlin = JensClock()
-clockLondon = JensClock(-1)
+clockJens = JensClock()
+
 
 def setup():
     size(640,320)
@@ -15,7 +16,6 @@ def draw():
     smooth()
     background(255)
 
-    clockBerlin.draw(width * 1/4.0, height/2)
-
-    clockLondon.draw(width * 3/4.0, height/2)
+    # Hier als Beispiel die Uhr zum Zeichnen einfügen
+    clockJens.draw(width * 1/4.0, height/2)
 

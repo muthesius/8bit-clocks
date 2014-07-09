@@ -7,9 +7,8 @@
 from JensClock import JensClock
 from BenClock import BenClock
 
-clockJens = JensClock()
-clockBen = BenClock()
-
+jensClock = JensClock()
+bensClock = BenClock()
 
 def setup():
     size(640,320)
@@ -19,8 +18,11 @@ def draw():
     background(255)
 
     # Hier als Beispiel die Uhr zum Zeichnen einfügen
-    translate(width * 1/4.0, height/2)
-    clockJens.draw()
-    translate(width * 2/4.0, 0)
-    clockBen.draw()
-
+    pushMatrix()
+    translate(width/2, height/2)
+    jensClock.draw()
+    popMatrix()
+    pushMatrix()
+    translate(width/4, height/2)
+    bensClock.draw()
+    popMatrix()

@@ -5,8 +5,10 @@
 
 # Hier sollen alle Uhren eingefügt werden
 from JensClock import JensClock
+from BenClock import BenClock
 
 clockJens = JensClock()
+clockBen = BenClock()
 
 
 def setup():
@@ -19,4 +21,6 @@ def draw():
     # Hier als Beispiel die Uhr zum Zeichnen einfügen
     translate(width * 1/4.0, height/2)
     clockJens.draw()
+    translate(width * 2/4.0, 0)
+    clockBen.draw()
 

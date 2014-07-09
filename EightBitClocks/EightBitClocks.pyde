@@ -24,16 +24,13 @@ def draw():
     translate(width/2, height/2)
     jensClock.draw()
     popMatrix()
-<<<<<<< HEAD
-    
+
     pushMatrix()
     translate(width/5, height/2)
     HermannClock.draw()
     popMatrix()
 
-=======
     pushMatrix()
     translate(width/4, height/2)
     bensClock.draw()
     popMatrix()
->>>>>>> master

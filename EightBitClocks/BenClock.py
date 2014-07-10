@@ -9,19 +9,15 @@ class Hand:
     length = 20
     maxLength = 50
     strokeWeight = 20
-    rotation = 0
     red = 0
     green = 0
     blue = 0
     
     def draw(self):
         self.update()
-        pushMatrix()
-        #rotate(self.rotation - HALF_PI) # Processing starts at 0 deg = horizontal
         strokeWeight(self.strokeWeight)
         stroke(self.red, self.green, self.blue)
         line(0, 0, self.length, 0)
-        popMatrix()
     
     def update(self):
         pass
@@ -66,10 +62,5 @@ class BenClock:
 
     def draw(self): # TODO Translate() here, make x/y optional arguments
         self.minutesHand.draw()
-        # TODO skip rotate + push/popMatrix if offset == 0
-        pushMatrix()
-        # rotate(self.offset * TWO_PI / 12)
         self.hoursHand.draw()
-        popMatrix()
         self.secondsHand.draw()
-

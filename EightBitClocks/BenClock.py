@@ -30,7 +30,7 @@ class SecondsHand(Hand):
     green = 255
     
     def update(self):
-        translate(0, self.strokeWeight);
+        translate(0, 2 * self.strokeWeight)
         self.length = map(second(), 0, 60, 0, self.maxLength)
 
 class MinutesHand(Hand):
@@ -46,7 +46,7 @@ class HoursHand(Hand):
         self.offset = offset
         
     def update(self):
-        translate(0, -1 * self.strokeWeight);
+        translate(0, -1 * self.strokeWeight)
         self.length = map(hour() + self.offset, 0, 12, 0, self.maxLength)
 
 class BenClock:

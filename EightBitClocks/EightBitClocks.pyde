@@ -1,4 +1,7 @@
-
+"""
+  Object Clock Example for 8bit Seminar (bit 6)
+  Muthesius Kunsthochschule Sommersemester 2014
+"""
 
 # Hier sollen alle Uhren eingefügt werden
 from JensClock import JensClock
@@ -17,7 +20,7 @@ lingsClock = LingClock()
 
 
 def setup():
-    size(320,320)
+    size(640,320)
 
 def draw():
     smooth()

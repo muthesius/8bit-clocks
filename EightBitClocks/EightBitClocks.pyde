@@ -8,7 +8,8 @@ from JensClock import JensClock
 from HermannClock import HermannClock
 from BenClock import BenClock
 
-# @ling: hm... better filenameing...?
+# @ling, @fei: hm... better filenaming...?
+from fei import FeiClock
 from LingsClock import LingClock
 
 
@@ -16,6 +17,7 @@ jensClock = JensClock()
 hermannClock = HermannClock()
 benClock = BenClock()
 lingClock = LingClock()
+feiClock = FeiClock()
 
 def setup():
     size(800,800)
@@ -44,5 +46,10 @@ def draw():
     pushMatrix()
     translate(width/6, 3 * height/4)
     lingClock.draw()
+    popMatrix()
+
+    pushMatrix()
+    translate(3 * width/6, 3 * height/4)
+    feiClock.draw()
     popMatrix()
 

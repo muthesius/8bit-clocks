@@ -7,20 +7,18 @@
 from JensClock import JensClock
 from HermannClock import HermannClock
 from BenClock import BenClock
-
-# @ling: hm... better filenameing...?
-from LingsClock import LingClock
+from FeiClock import FeiClock
+from LingClock import LingClock
 
 
 jensClock = JensClock()
-HermannClock = HermannClock()
-bensClock = BenClock()
-
-lingsClock = LingClock()
-
+hermannClock = HermannClock()
+benClock = BenClock()
+lingClock = LingClock()
+feiClock = FeiClock()
 
 def setup():
-    size(640,320)
+    size(800,800)
 
 def draw():
     smooth()
@@ -29,20 +27,27 @@ def draw():
     # Hier als Beispiel die Uhr zum Zeichnen einfügen
 
     pushMatrix()
-    translate(width/2, height/2)
+    translate(width/6, height/4)
     jensClock.draw()
     popMatrix()
 
     pushMatrix()
-    translate(width/5, height/2)
-    HermannClock.draw()
+    translate(3 * width/6, height/4)
+    hermannClock.draw()
     popMatrix()
 
     pushMatrix()
-    translate(width/4, height/2)
-    bensClock.draw()
+    translate(5 * width/6, height/4)
+    benClock.draw()
     popMatrix()
 
-    translate(width/2, height/2)
-    lingsClock.draw()
+    pushMatrix()
+    translate(width/6, 3 * height/4)
+    lingClock.draw()
+    popMatrix()
+
+    pushMatrix()
+    translate(3 * width/6, 3 * height/4)
+    feiClock.draw()
+    popMatrix()
 

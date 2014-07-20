@@ -23,6 +23,18 @@ def setup():
 def draw():
     smooth()
     background(255)
+    
+    # Text unten links
+    pushMatrix()
+    translate(40,height -height/25)
+    noStroke()
+    rect(-40,5,30, -40)
+    text("bit #8", 0,0)
+    textSize(40)
+    popMatrix()
+    
+    
+    
 
     # Hier als Beispiel die Uhr zum Zeichnen einfügen
 

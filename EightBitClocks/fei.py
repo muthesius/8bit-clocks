@@ -66,7 +66,7 @@ class StundenZeiger(Zeiger):
 
 
         popMatrix()
-class Zeiger:
+class FeiClock:
    sekunden= SekundenZeiger()
    minuten= MinutenZeiger()
    stunden=StundenZeiger()

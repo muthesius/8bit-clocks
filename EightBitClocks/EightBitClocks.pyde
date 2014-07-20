@@ -7,10 +7,8 @@
 from JensClock import JensClock
 from HermannClock import HermannClock
 from BenClock import BenClock
-
-# @ling, @fei: hm... better filenaming...?
-from fei import FeiClock
-from LingsClock import LingClock
+from FeiClock import FeiClock
+from LingClock import LingClock
 
 
 jensClock = JensClock()
